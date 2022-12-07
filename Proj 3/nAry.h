@@ -4,6 +4,7 @@
 #include <queue>
 #include <tuple>
 #include <map>
+#include <cmath>
 #include "node.h"
 
 using namespace std;

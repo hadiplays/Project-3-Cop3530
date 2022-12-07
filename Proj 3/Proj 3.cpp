@@ -120,10 +120,8 @@ int main()
 
         int input;
         cin >> input;
-        try
-        {
-            switch (input)
-            {
+
+        switch (input) {
             case 1:
                 printViolence(root, ht);
                 break;
@@ -133,54 +131,11 @@ int main()
             case 3:
                 searchCity(root, ht);
                 break;
-            case 0:
-
-                break;
             default:
-                break;
-            }
-        }
-        catch (const std::exception&)
-        {
+                return 0;
         }
     }
-    return 0;
 }
-
-//void list(nAry root, HashTable ht) {
-//    cout << endl << "1. Print Top 10 cities by most gun related violence incidents";
-//    cout << endl << "2. Print Top 10 cities by most underaged casualties";
-//    cout << endl << "3. Search city";
-//    cout << endl << "0. Exit\n";
-//    cout << endl << "Select an option: ";
-//
-//    int input;
-//    cin >> input;
-//    try
-//    {
-//        switch (input)
-//        {
-//        case 1:
-//            printViolence(root, ht);
-//            break;
-//        case 2:
-//            printUnderaged(root);
-//            break;
-//        case 3:
-//            searchCity(root);
-//            break;
-//        case 0:
-//            break;
-//        default:
-//            list(root);
-//            break;
-//        }
-//    }
-//    catch (const std::exception&)
-//    {
-//        list(root);
-//    }
-//}
 
 void printViolence(nAry root, HashTable ht) {
     cout << endl << "Top 10 states by most gun related violence deaths\n";
